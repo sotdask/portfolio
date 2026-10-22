@@ -18,6 +18,24 @@
 
 @theme {
     --font-sans: "Press Start 2P", sans-serif;
+     --font-pixel: "VT323", monospace;
     --color-primary: #E96E2A;
     --color-secondary: #2DA69F;
+}
+
+.retro-press {
+  transition: transform 60ms steps(1, end), box-shadow 60ms steps(1, end);
+}
+
+.retro-press:hover,
+.retro-press:focus-visible,
+.retro-press:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .retro-press {
+    transition: none;
+  }
 }
