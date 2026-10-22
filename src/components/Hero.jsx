@@ -4,11 +4,11 @@ import { background, computer } from "../assets";
 function Hero() {
   return (
     <section>
-      <div className="h-dvh w-d lg:h-[80dvh] relative flex justify-center items-center">
+      <div className="h-svh w-d lg:h-[80dvh] relative flex justify-center items-center">
         <img
           src={background}
           alt="backrgound image"
-          className="h-full w-full object-cover absolute "
+          className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="section-padding flex flex-col lg:flex-row absolute justify-between items-center max-md:top-0 max-md:h-full max-md:justify-center max-md:gap-6 max-md:py-8">
           <div className="wrapper max-md:flex max-md:w-full max-md:flex-col max-md:items-center max-md:gap-6">
